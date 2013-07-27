@@ -1,8 +1,11 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#controls .ui-block-a {
+  text-align: right;
 }
 
-a {
-  color: #00B7FF;
+#controls .ui-block-b {
+  text-align: center;
+}
+
+#controls .ui-block-c {
+  text-align: left;
 }

@@ -2,15 +2,99 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel='stylesheet' href='lib/jquery/jquery.mobile-1.3.1.min.css' />
+    <link rel='stylesheet' href='lib/jquery/jquery-ui-1.10.3.min.css' />
+    <link rel='stylesheet' href='stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
 
-<iframe src="http://embed.bambuser.com/channel/nunoveloso" width="460" height="403" frameborder="0">Your browser does not support iframes.</iframe>
+
+    <div id="control-page" data-role="page" >
+
+      <!-- Header -->
+      <div data-role="header" data-position="fixed">
+        <h1><%= title %></h1>
+      </div>
+
+      <!-- Content -->
+      <div data-role="content">
+
+        <div class="ui-grid-a">
+
+          <div id="visor" class="ui-block-a">
+            <iframe src="http://embed.bambuser.com/channel/nunoveloso" width="460" height="403" frameborder="0">Your browser does not support iframes.</iframe>
+          </div>
+
+          <div class="ui-block-b" id="controls">
+
+            <p>Hello, Commander! Welcome to the Nodebot Retaliation control room. This is where things get serious. We unlocked 4 nukes for you, and are waiting on orders. What should we do?</p>
+
+            <!-- Row -->
+            <div class="ui-grid-b">
+              <div class="ui-block-a">
+              </div>
+              <div class="ui-block-b">
+                <button class="control-button" id="control-up" data-action="up" data-value="100"
+                  data-icon="delete" data-iconpos="right" data-inline="true" data-corners="true" >
+                    Up</button>
+              </div>
+              <div class="ui-block-c">
+              </div>
+            </div>
+
+            <!-- Row -->
+            <div class="ui-grid-b">
+              <div class="ui-block-a">
+                <button class="control-button" id="control-left" data-action="left" data-value="100"
+                  data-icon="delete" data-iconpos="left" data-inline="true" data-corners="true" >
+                  Left</button>
+              </div>
+              <div class="ui-block-b">
+                <button class="control-button" id="control-fire" data-action="fire" data-value="1"
+                  data-icon="delete" data-iconpos="right" data-inline="true" data-corners="true" >
+                    Fire!</button>
+              </div>
+              <div class="ui-block-c">
+                <button class="control-button" id="control-right" data-action="right" data-value="100"
+                  data-icon="delete" data-iconpos="right" data-inline="true" data-corners="true" >
+                    Right</button>
+              </div>
+            </div>
+
+            <!-- Row -->
+            <div class="ui-grid-b">
+              <div class="ui-block-a">
+              </div>
+              <div class="ui-block-b">
+                <button class="control-button" id="control-down" data-action="down" data-value="100"
+                  data-icon="delete" data-iconpos="right" data-inline="true" data-corners="true" >
+                    Down</button>
+              </div>
+              <div class="ui-block-c">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo">
+        <h4 class="ui-title" role="heading" aria-level="1">Brought to you by <a href="http://marzeelabs.org">Marzee Labs</a>, for #nodebotsday Barcelona 2013.</h4>
+      </div>
+
+    </div>
+
+
+  <!-- Scripts -->
+  <script src="lib/jquery/jquery-1.10.2.min.js"></script>
+  <script src="lib/jquery/jquery.mobile-1.3.1.min.js"></script>
+  <script src="lib/jquery/jquery-ui-1.10.3.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="javascripts/scripts.js"></script>
 
   </body>
-
-  <script type="text/javascript" ></script>
 </html>

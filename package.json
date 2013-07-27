@@ -1,12 +1,27 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
-  "private": true,
+  "name" : "nodebot-retaliation-webui",
+  "version" : "0.0.1",
+  "author": "Marzee Labs <info@gmarzeelabs.com>",
+  "description": "A simple web UI for Nodebot Retaliation.",
+  "contributors": [
+    {
+      "name": "Nuno Veloso",
+      "email": "nuno@marzeelabs.org",
+      "twitter": "@nunoveloso"
+    },
+    {
+      "name": "Peter Vanhee",
+      "email": "peter@marzeelabs.org",
+      "twitter": "@pvhee"
+    }
+  ],
   "scripts": {
-    "start": "node app"
+    "start": "node app.js",
   },
-  "dependencies": {
-    "express": "3.1.0",
-    "ejs": "*"
-  }
+  "keywords": [
+    "nodebotsday",
+    "thunder missile launcher",
+    "interface"
+  ],
+  "license": "MIT"
 }
