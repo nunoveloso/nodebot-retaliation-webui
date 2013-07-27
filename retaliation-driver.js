@@ -29,7 +29,7 @@ function retaliation_entry_point(req, res) {
   command = '/usr/local/bin/python lib/Retaliation/retaliation.py ' + command.join(' ')
   spawn_exec(command)
   console.log('Executed the command: ' + command)
-  res.wite('Done.')
+  res.write('Done.')
   res.end()
 }
 
