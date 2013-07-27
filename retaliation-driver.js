@@ -1,23 +1,35 @@
+/**
+ * @file
+ * This is a HTTP server to wrap the Retaliation python script.
+ *
+ * @author Nuno Veloso (nuno@marzeelabs.org)
+ * @author Peter Vanhee (peter@marzeelabs.org)
+ */
+
 
 /**
  * Module dependencies.
  */
-
 var http = require('http')
   , util  = require('util')
   , spawn = require('child_process').spawn
   , config = {
-      hostname : '127.0.0.1',
+      hostname : '0.0.0.0',
       port : 3001
     }
 
 
-
+/**
+ * Does the actual job: reads and execute the command.
+ * @param req node [Object]
+ * @param res node [Object]
+ */
 function retaliation_entry_point(req, res) {
   var command = req.url.replace(/^\//, '').split('/')
   command = '/usr/local/bin/python lib/Retaliation/retaliation.py ' + command.join(' ')
   spawn_exec(command)
   console.log('Executed the command: ' + command)
+  res.end()
 }
 
 
