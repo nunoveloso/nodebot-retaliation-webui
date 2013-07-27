@@ -37,6 +37,10 @@ app.configure('development', function() {
 })
 
 
+driver_url = function() {
+  return config.driver_url
+}
+
 app.get('/', routes.index)
 
 
