@@ -1,0 +1,3 @@
+[submodule "lib/Retaliation"]
+	path = lib/Retaliation
+	url = git@github.com:MarzeeLabs-Org/Retaliation.git
